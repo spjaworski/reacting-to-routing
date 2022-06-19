@@ -16,16 +16,20 @@ const Home = () => {
                     Species in the Films
                     </Link> */}
                     
-                    <span className='d-flex justify-content-center'><Link to='/Films' style={{padding: '3px', marginLeft: '.5rem'}} className='btn btn-primary'>
+                    {/* <span className='d-flex justify-content-center'>
+
+                    <Link to='/' style={{padding: '3px', marginLeft: '.5rem'}} className='btn btn-primary'>
+                    Go Home
+                    </Link>
+                    <Link to='/Films' style={{padding: '3px', marginLeft: '.5rem'}} className='btn btn-primary'>
                     View Films
                     </Link>
                     <Link to='/People' style={{padding: '3px', marginLeft: '.5rem'}} className='btn btn-primary'>
                     View People
                     </Link>
-                    <Link to='/' style={{padding: '3px', marginLeft: '.5rem'}} className='btn btn-primary'>
-                    Go Home
-                    </Link></span>
-
+                   
+                    </span> */}
+                    <p className='text-center'>Studio Ghibli</p>
                 </div>
             </section>
         </main>

@@ -22,9 +22,9 @@ useEffect(() => {
                 <div className="col-md-6 text">
                     <h1  className="text-center">Films</h1>
                     <span className={'d-flex justify-content-center'}>
-                    <Link to='/' style={{padding: '3px'}} className='btn btn-primary'>
+                    {/* <Link to='/' style={{padding: '3px'}} className='btn btn-primary'>
                     Return Home
-                    </Link>
+                    </Link> */}
                     </span>
                 </div>
             </section>

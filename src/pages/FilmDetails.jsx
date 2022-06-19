@@ -22,12 +22,12 @@ const FilmDetails = () => {
             <section className="row justify-content-center">
                 <div className="col-md-6">
                     <h1  className="text-center">{details.title}</h1>
-                   <span className='d-flex justify-content-center'>
+                   {/* <span className='d-flex justify-content-center'>
                    <Link to='../Films' style={{padding: '3px', marginLeft: '.5rem'}} className='btn btn-primary'>Back</Link>
                     <Link to='/' style={{padding: '3px', marginLeft: '.5rem'}} className='btn btn-primary'>
                     Return Home
                     </Link>
-                   </span>
+                   </span> */}
                    
                         <div>
                         
