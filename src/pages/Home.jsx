@@ -4,8 +4,8 @@ const Home = () => {
     return (
         <main className="container">
             <section className="row justify-content-center">
-                <div className="col-md-6">
-                    <h1  className="text-center">Home Page</h1>
+                <div className="col-md-6 mb-5" style={{background: 'lightgrey'}}>
+                    <h1  className="text-center">Studio Ghibli</h1>
                     {/* <Link to='/Films' style={{padding: '3px', marginLeft: '.5rem'}} className='btn btn-primary'>
                     Ghibli Films
                     </Link>
@@ -29,9 +29,16 @@ const Home = () => {
                     </Link>
                    
                     </span> */}
-                    <p className='text-center'>Studio Ghibli</p>
+                    <p className='text-center'>Home Page</p>
                 </div>
+                <div>   
+                    <h1 className='card-image d-flex justify-content-center'><img  src={'https://upload.wikimedia.org/wikipedia/en/c/ca/Studio_Ghibli_logo.svg'} alt= 'Ghibli Image'></img></h1>
+                </div>
+                
+                     
             </section>
+            <p className='d-flex justify-content-center'>Questions, Concerns, Complaints?</p>
+            <p className='d-flex justify-content-center'>Please contact: spjaworski@gmail.com</p>
         </main>
     );
 };

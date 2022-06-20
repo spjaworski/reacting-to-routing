@@ -9,13 +9,16 @@ const NavBar = () => {
                 <span className='d-flex justify-content-center mt-5 mb-5'>
 
                     <NavLink to='/' style={{padding: '3px', marginLeft: '.5rem'}} className='btn btn-primary'>
-                    Go Home
+                        Go Home
                     </NavLink>
                     <NavLink to='/Films' style={{padding: '3px', marginLeft: '.5rem'}} className='btn btn-primary'>
-                    View Films
+                        View Films
                     </NavLink>
                     <NavLink to='/People' style={{padding: '3px', marginLeft: '.5rem'}} className='btn btn-primary'>
-                    View People
+                        View People
+                    </NavLink>
+                    <NavLink to='/Locations' style={{padding: '3px', marginLeft: '.5rem'}} className='btn btn-primary'>
+                        View Locations
                     </NavLink>
 
                 </span>

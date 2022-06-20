@@ -1,8 +1,8 @@
 import { useState, useEffect } from 'react';
 import { Link, useParams } from 'react-router-dom';
+// import Films from './Films';
 
-
-const PeopleDetails = () => {
+const LocationsDetails = () => {
 
     const { id } = useParams();
 
@@ -10,7 +10,7 @@ const PeopleDetails = () => {
 
     useEffect(() => {
         (async () => {
-            const response = await fetch(`https://ghibliapi.herokuapp.com/people/${id}`);
+            const response = await fetch(`https://ghibliapi.herokuapp.com/locations/${id}`);
             const details = await response.json();
             setDetails(details)
             console.log(details);
@@ -21,12 +21,14 @@ const PeopleDetails = () => {
         <main className="container">
             <section className="row justify-content-center">
                 <div className="col-md-6">
-                    <span className='d-flex justify-content-center mt-5 mb-5'>
-                    <Link to='/People' className='btn btn-primary'>
+
+                <span className='d-flex justify-content-center mt-5 mb-5'>
+                    <Link to='/Locations' className='btn btn-primary'>
                     Go Back
                     </Link>
                     </span>
-                    <h1  className="text-center">{details.name}</h1>
+
+                    <h1  className="text-center mb-5">{details.name}</h1>
                     
                    {/* <span className='d-flex justify-content-center'>
                    <Link to='../Films' style={{padding: '3px', marginLeft: '.5rem'}} className='btn btn-primary'>Back</Link>
@@ -40,22 +42,21 @@ const PeopleDetails = () => {
                             <div className="card shadow my-2">
                                 <div className='card-body'>
                                     
-                                   
                             
-                                    <h1 className='card-age'>Age: {details.age}</h1>
+                                <h1 className='card-climate'>Climate: {details.climate}</h1>
                                
-                                    <h1 className='card-gender'>Gender: {details.gender} </h1>
+                                  
+                                <h1 className='card-terrain'>Terrain: {details.terrain}</h1>
 
-                                    <h1 className='card-eye'>Eye Color: {details.eye_color} </h1>
+                                <h1 className='card-url'>Appears in: {details.url}</h1>
 
-                                    <h1 className='card-hair'>Hair Color: {details.hair_color} </h1>
-
-                                    <h1 className='card-id'>id: {details.id}</h1>
+                                <h1 className='card-id'>id: {details.id}</h1>
                               
-                                
+                                                            
                                  </div>
                                     
                                 </div>
+
                             </div>
                         </div>
                             
@@ -68,26 +69,6 @@ const PeopleDetails = () => {
     );
 };
 
-export default PeopleDetails;
+export default LocationsDetails;
 
-
-
-
-// import { Link } from 'react-router-dom';
-
-// const PeopleDetails = () => {
-//     return (
-//         <main className="container">
-//             <section className="row justify-content-center">
-//                 <div className="col-md-6">
-//                     <h1  className="text-center">People Details Page</h1>
-//                     <Link to='/' style={{padding: '3px'}} className='btn btn-primary'>
-//                     Return Home
-//                     </Link>
-//                 </div>
-//             </section>
-//         </main>
-//     );
-// };
-
-// export default PeopleDetails;
+// style={{width: "1300px"}}

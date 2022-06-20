@@ -22,6 +22,11 @@ const FilmDetails = () => {
             <section className="row justify-content-center">
                 <div className="col-md-6">
                     <h1  className="text-center">{details.title}</h1>
+                    <span className='d-flex justify-content-center mt-5 mb-5'>
+                    <Link to='/Films' className='btn btn-primary'>
+                    Go Back
+                    </Link>
+                    </span>
                    {/* <span className='d-flex justify-content-center'>
                    <Link to='../Films' style={{padding: '3px', marginLeft: '.5rem'}} className='btn btn-primary'>Back</Link>
                     <Link to='/' style={{padding: '3px', marginLeft: '.5rem'}} className='btn btn-primary'>
@@ -31,9 +36,9 @@ const FilmDetails = () => {
                    
                         <div>
                         
-                            <div className="card shadow my-2">
+                            <div className="card shadow my-2" style={{width: '700px'}} >
                                 <div className='card-body'>
-                                    <h1 className='card-id'>id: {details.id}</h1>
+                                    
                             
                                  
                                     <h1 className='card-first-title'>Original title: {details.original_title}</h1>
@@ -56,6 +61,8 @@ const FilmDetails = () => {
                                     <h1 className='card-time'>Running time: {details.running_time} minutes</h1>
                               
                                     <h1 className='card-rt'>Rotten Tomatoes score: {details.rt_score}</h1>
+
+                                    <h1 className='card-id'>id: {details.id}</h1>
                                 
                                  </div>
                                     
@@ -64,9 +71,7 @@ const FilmDetails = () => {
                                 <div className='card-body'>   
                                     <h1 className='card-image'><img className={'d-flex justify-content-center'} src={details.image} alt= 'Movie Image'></img></h1>
                                 </div>
-                                <div className='card-body'>
-                                    <h1 className='card-banner'><img className={'d-flex justify-content-center'} src={details.movie_banner} alt= 'Movie Banner'></img></h1>
-                                </div>
+                                
                             </div>
                         </div>
                             
